@@ -1,7 +1,7 @@
 # Xv6 OS Extensions — Programs, Shell Commands & System Calls
 
 > **Course Project | Operating Systems | University of South Florida**
-> Score: **95 / 100**
+
 
 ## Team Members
 | Name | UID |
