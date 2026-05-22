@@ -532,3 +532,15 @@ procdump(void)
     cprintf("\n");
   }
 }
+
+struct spinlock tickslock;
+void init_tickslock(void){
+	initlock(&tickslock,"ticks");
+}
+
+void sleep_ticks(int ticks){
+	acquire(&tickslock);
+	sleep(&ticks,&tickslock);
+	release(&tickslock);
+}
+
